@@ -77,6 +77,7 @@ a {
 }
 
 .ub:hover::after {
+    
     margin-left:100px;
     opacity: 1;
     animation: blink 2s alternate;
@@ -95,26 +96,7 @@ a {
 
 }
 
-.now::after {
-    content: '';
-    position: absolute;
 
-    
-    
-    transform: translateY(170%);
-    
-    
-    
-
-    background-image: url('../img/now.png');
-    background-size: cover;
-    background-position: end;
-    width: 100px;
-    height: 80px;
-
-
-    opacity: 0;
-}
 
 .now:hover::after {
     margin-left: 120px;
@@ -136,18 +118,6 @@ a {
     display: inline-block;
 
 }
-.front::after {
-    content: '';
-    position: absolute;
-    transform: translateY(70%);
-    background-image: url('../img/undraw_speech_to_text_re_8mtf.svg');
-    background-size: cover;
-    background-position: end;
-    width: 100px;
-    height: 80px;
-    opacity: 0;
-}
-
 
 .front:hover::after {
     margin-left: 60px;
@@ -170,17 +140,6 @@ a {
     display: inline-block;
 
 }
-.web::after {
-    content: '';
-    position: absolute;
-    transform: translateY(-140%);
-    background-image: url('../img/web.svg');
-    background-size: cover;
-    background-position: end;
-    width: 100px;
-    height: 80px;
-    opacity: 0;
-}
 
 
 .web:hover::after {
@@ -198,16 +157,7 @@ a {
 
 
 }
-.app::after {
-    content: '';
-    position: absolute;
-    transform: translateY(-150%);
-    background-image: url('../img/app.svg');
-    background-size: cover;
-    width: 100px;
-    height: 80px;
-    opacity: 0;
-}
+
 
 
 .app:hover::after {
@@ -216,3 +166,18 @@ a {
     animation: blink 2s alternate;
     animation-timing-function: ease-in-out;
 }
+
+
+
+
+/* 
+.htmlicons:hover {
+    background-color: white;
+    
+    ;
+    
+
+}
+.html:hover{
+    fill: black;
+} */

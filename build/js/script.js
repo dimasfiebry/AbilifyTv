@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function handleScroll() {
             var scrollPosition = window.scrollY || window.pageYOffset;
 
-            if (scrollPosition < 480) {
+            if (scrollPosition < 462) {
                 navbarAtas.style.display = 'none';
                 menuBawah.style.display = 'flex';
             } else if (scrollPosition < 590 ){
