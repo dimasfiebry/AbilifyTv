@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reportform.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div id="dimas" class="div-navbar">
+            <a href="#" class="logo-style space-x-4">
+                <img src="img/logo1.svg" alt="" class="img-style" />
+                <h1 class="judul">Ability For You</h1>
+            </a>
+            <ul class="menu-navbar">
+                <li class="nav-margin" >
+                    <a class="a-nav" href="index.html">Home</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="social.html">Social</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="news.html">News</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="about.html">About</a>
+                </li>
+                <li class="nav-red-margin" style="color: black">
+                    <a class="red-nav" href="report.html"  style="color: black">Report</a>
+                </li>
+            </ul>
+            <ul class="ul-profile" style="color: #288870">
+                <li class="li-profile">
+                    <i data-lucide="user-circle-2" class="lucide-profile"></i>
+
+                    <p class="text-profile">Profile</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="form-section">
+        <main class="main-form-section">
+            <div class="form-box">
+                <h2>Report</h2>
+                <form class="class-form" id="reportForm" action="tokenreport.html">
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" name="userName" required>
+
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+
+                    <label for="userName">Reported Name</label>
+                    <input type="text" id="reportName" name="reportName" required>
+
+                    <label for="violationDescription">Description</label>
+                    <select id="violationDescription" name="violationDescription" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="harassment">Harassment</option>
+                        <option value="spam">Spam</option>
+                        <option value="abuse">Abuse</option>
+                        <option value="toxic">Toxic</option>
+                        <option value="other">Other</option>
+                    </select>
+                        <label for="DetailDescription">Detail Description</label>
+                        <textarea name="DetailDescription" id="DetailDescription" cols="20" rows="3"></textarea>  
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </section>
+    
+    <!-- Script Lucide Icon -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</body>
+</html>

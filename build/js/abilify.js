@@ -34,7 +34,7 @@ buttonStart.addEventListener('click', () => {
   if (count === 0) {
     count++;
 
-    let nextVid = '../../assets/videos/video' + count + '.mp4';
+    let nextVid = 'video/video' + count + '.mp4';
     otherVideo.src = nextVid;
     otherVideo.play();
   } else {
@@ -50,7 +50,7 @@ buttonNext.addEventListener('click', () => {
     count = 1;
   }
   console.log(count);
-  let nextVid = '../../assets/videos/video' + count + '.mp4';
+  let nextVid = 'video/video' + count + '.mp4';
   otherVideo.src = nextVid;
   otherVideo.play();
 });

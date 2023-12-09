@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abilify</title>
+    <link rel="stylesheet" href="css/report.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div id="dimas" class="div-navbar">
+            <a href="#" class="logo-style space-x-4">
+                <img src="img/logo1.svg" alt="" class="img-style" />
+                <h1 class="judul">Ability For You</h1>
+            </a>
+            <ul class="menu-navbar">
+                <li class="nav-margin">
+                    <a class="a-nav" href="index.html">Home</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="social.html">Social</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="news.html">News</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="about.html">About</a>
+                </li>
+                <li class="nav-red-margin" style="color: black">
+                    <a class="red-nav" href="report.html" style="color: black">Report</a>
+                </li>
+            </ul>
+            <ul class="ul-profile" style="color: #288870">
+                <li class="li-profile">
+                    <i data-lucide="user-circle-2" class="lucide-profile"></i>
+
+                    <p class="text-profile">Profile</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1 / Home -->
+
+    <section class="home-section">
+        <main class="main-home-section">
+            <div class="div1-main-home-section">
+                <h1 class="h1-div-main-home-section">
+                    <span class="span-creativity">Report</span>
+                </h1>
+                <p class="text-div-main-home-section" style="color: #112e11">
+                    Kami menghargai partisipasi anda dalam menjaga keamanan dan kenyamanan
+                    komunitas kami. Halaman ini disediakan untuk <b>perilaku pengguna
+                        yang dianggap melanggar aturan dan etika penggunaan platform kami.</b>
+                </p>
+                <p class="button-join" id="#"><a href="reportform.html">Make a Report</a></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="scroll"
+                    id="btn" onclick="scrollDown()">
+                    <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" />
+                </svg>
+            </div>
+            <div class="div2-main-home-section">
+                <img src="img/report.jpg" alt="Illustration" class="img-div2-main-home-section" id="image1" />
+            </div>
+        </main>
+    </section>
+
+    <!-- Section 2 / fitur -->
+    <section class="section2">
+        <main class="main-fitur">
+            <div class="container1-fitur">
+                <h2 class="judul-fitur">
+                    Prepare yourself, let's bravely explore your world together
+                </h2>
+                <p class="deskripsi-fitur">
+                    Discover the essence of our <b>features</b> – crafted to be your
+                    reliable companions throughout <b>your journey</b>. We're here to
+                    assist and enhance <b>your experience</b>, ensuring a seamless and
+                    enjoyable adventure.
+                </p>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container-fitur1">
+                            <img src="img/report1.jpg" class="image-fitur1" alt="" />
+                        </div>
+                        <h1 class="nama-fitur">View Report</h1>
+                        <p class="deskripsi">
+                            Anda dapat melihat kembali laporan anda.
+                        </p>
+                        <a href="entertoken.html" class="btn"> View Report</a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <div class="container-fitur1">
+                                <img src="img/fitur2.jpg" class="image-fitur1" alt="" />
+                            </div>
+                            <h1 class="nama-fitur">Feedback Us</h1>
+                            <p class="deskripsi">
+                                Beri kami ulasan agar kami dapat berkembang lebih maju.
+                            </p>
+                            <a href="Feedback.html" class="btn"> Feedback Us</a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </main>
+    </section>
+
+
+</body>
+<script src="report.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Script Lucide Icon -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</html>
+
+</html>

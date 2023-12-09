@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+
+html,
+body {
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding: auto;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.scroll {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  cursor: pointer;
+  transition: ease-in;
+  transition-duration: 0.2s;
+  padding-bottom: 20px;
+}
+
+.scroll:active {
+  margin-top: 20px;
+}
+
+.navbar {
+  position: fixed;
+  transition: top 1s ease;
+  /* padding-left: 0px;
+    padding-right: 0px; */
+  width: 100%;
+  transition: ease 2s;
+  height: 25px;
+}
+.navbar.hidden {
+  top: -75px;
+  transform: (20);
+}
+.div-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 90px;
+  padding-right: 4rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgb(226, 226, 226);
+  height: 100%;
+}
+
+.a-nav {
+  text-decoration: none;
+  color: #288870;
+  height: 20px;
+}
+.red-nav {
+  text-decoration: none;
+  color: #288870;
+  height: 20px;
+}
+.a-nav:hover {
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.red-nav:hover {
+  color: #800002;
+  cursor: pointer;
+}
+
+.logo-style {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: calc 1rem;
+}
+.img-style {
+  width: 1.4rem;
+  margin-right: 15px;
+}
+
+.logo-style:hover {
+  cursor: pointer;
+}
+.judul {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #288870;
+}
+.menu-navbar {
+  color: #047659;
+  display: flex;
+  flex-direction: row;
+  margin-left: calc 3.5rem;
+  margin-right: calc 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: small;
+  padding-left: 60px;
+  list-style-type: none;
+}
+
+.nav-margin {
+  margin-right: 40px;
+}
+
+.nav-margin:hover {
+  color: #6e6e6e;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 75ms;
+}
+
+.nav-red-margin:hover {
+  color: #800002;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 75ms;
+}
+
+.ul-profile {
+  padding-left: 5rem /* 80px */;
+  padding-right: 5rem /* 80px */;
+}
+.li-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.li-profile:hover {
+  color: #6e6e6e;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 75ms;
+}
+
+.lucide-profile {
+  width: 1.25rem;
+}
+.text-profile {
+  margin-left: 10px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+.home-section {
+  background-color: rgb(248, 248, 248);
+}
+.main-home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.div1-main-home-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 120px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.h1-div-main-home-section {
+  color: #047659;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  line-height: 1.5;
+}
+.span-creativity {
+  color: #e54a4c;
+}
+.text-div-main-home-section {
+  color: #005d46;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: justify;
+  margin-top: 5px;
+}
+.button-join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(150, 150, 150);
+
+  /* background-image: linear-gradient(#047659, rgb(217, 217, 217)); */
+}
+.button-join > a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+.button-join:hover {
+  cursor: pointer;
+  background-color: #6e6e6e;
+  color: rgb(0, 0, 0);
+}
+.div2-main-home-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-div2-main-home-section {
+  object-fit: cover;
+  width: 620px;
+  height: 640px;
+}
+
+/* --------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------*/
+/* Section 2 - Fitur */
+
+.section2 {
+  background-color: rgb(240, 240, 240);
+}
+.main-fitur {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.container1-fitur {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+
+.judul-fitur {
+    color: #034e3b;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    width: 48vw;
+    padding-left: 260px;
+}
+.deskripsi-fitur {
+    color: #034e3b;
+    align-items: start;
+    text-align: justify;
+    padding-left: 100px;
+    width: 62vw;
+    padding-right: 300px;
+    word-spacing: 2px;
+    line-height: 24px;
+}
+
+.container2-fitur {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.container-fitur1 {
+    height: 45%;
+}
+.image-fitur1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-top: 20px;
+  width: 100%;
+  height: 320px;
+}
+
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nama-fitur,
+.deskripsi{
+    margin-left: 50px;
+}
+
+.nama-fitur {
+    padding-top: 10px;
+    font-size: bold;
+    font-weight: 700;
+    color: #034e3b;
+}
+.deskripsi {
+    padding-right: 20px;
+    font-size: medium;
+    font-weight: 300;
+    text-align: justify;
+    color: #034e3b;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 35px;
+  border-radius: 60px;
+  justify-content: center;
+
+  color: #034e3b;
+  font-size: medium;
+  text-align: center;
+
+  transition: ease-in;
+  background: transparent;
+  transition-duration: 0.2s;
+  border: none;
+  width: 120px;
+  height: 38px;
+}
+.btn:hover {
+  color: aliceblue;
+  background-color: #2d8770;
+  text-align: center;
+}

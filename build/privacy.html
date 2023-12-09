@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Abilify</title>
+    <link rel="stylesheet" href="privacy.css">
+</head>
+<body>
+
+    <div class="policy-container">
+        <h1>Kebijakan Privasi - Platform Web Abilify</h1>
+
+        <h2>Pendahuluan</h2>
+        <p>Terima kasih telah menggunakan platform web Abilify, tempat yang didedikasikan untuk menciptakan lingkungan inklusif bagi individu dengan gangguan pendengaran dan bicara. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan melindungi informasi pribadi Anda.</p>
+
+        <h2>Informasi yang Kami Kumpulkan</h2>
+        <p>Kami mengumpulkan informasi untuk memberikan pengalaman yang lebih baik bagi pengguna kami. Informasi yang kami kumpulkan meliputi:</p>
+        <ul>
+            <li>Informasi Pribadi: Nama, alamat email, dan rincian lain yang diberikan selama registrasi akun.</li>
+            <li>Data Komunikasi: Informasi apa pun yang dibagikan dalam obrolan grup, forum diskusi, atau fitur berbagi cerita.</li>
+            <li>Data Penggunaan: Informasi tentang bagaimana Anda berinteraksi dengan platform Abilify, seperti halaman yang Anda kunjungi dan fitur yang Anda gunakan.</li>
+        </ul>
+
+        <h2>Bagaimana Kami Menggunakan Informasi Anda</h2>
+        <p>Kami menggunakan informasi yang dikumpulkan untuk:</p>
+        <ul>
+            <li>Memfasilitasi interaksi inklusif antara pengguna.</li>
+            <li>Meningkatkan dan personalisasi pengalaman pengguna.</li>
+            <li>Menanggapi pertanyaan pengguna dan memberikan dukungan.</li>
+            <li>Melakukan penelitian untuk meningkatkan layanan kami.</li>
+
+        </ul>
+
+        <h2>Berbagi Informasi</h2>
+        <p>Kami menghormati privasi Anda dan tidak menjual, menukar, atau sebaliknya mentransfer informasi pribadi Anda kepada pihak eksternal. Namun, kami dapat berbagi informasi dalam situasi berikut:</p>
+        <ul>
+            <li>Dengan izin Anda.</li>
+            <li>Untuk mematuhi kewajiban hukum.</li>
+            <li>Untuk melindungi hak, privasi, keamanan, atau properti kami.</li>
+            <li>Pada acara transaksi korporat, seperti penggabungan atau akuisisi.</li>
+
+        </ul>
+        <h2>Keamanan Data</h2>
+        <p>Kami menerapkan langkah-langkah keamanan untuk melindungi informasi pribadi Anda dari akses, pengungkapan, perubahan, dan penghancuran yang tidak sah. Namun, tidak ada platform online yang dapat menjamin keamanan mutlak.</p>
+      
+        <h2>Kontrol dan Akses Pengguna</h2>
+        <p>Anda memiliki hak untuk mengakses, mengoreksi, atau menghapus informasi pribadi Anda. Anda dapat mengelola pengaturan akun atau menghubungi kami untuk bantuan.</p>
+        
+        <h2>Cookie dan Teknologi Pelacakan</h2>
+        <p>Kami menggunakan cookie dan teknologi serupa untuk meningkatkan pengalaman pengguna dan mengumpulkan informasi tentang pola penggunaan. Anda dapat mengelola preferensi cookie melalui pengaturan browser Anda.:</p>
+      
+        <h2>Tautan Pihak Ketiga</h2>
+        <p>Platform Abilify mungkin berisi tautan ke situs web pihak ketiga. Kami tidak bertanggung jawab atas praktik privasi atau konten situs ini. Harap tinjau kebijakan privasi platform pihak ketiga sebelum memberikan informasi pribadi.</p>
+        
+        <h2>Perubahan pada Kebijakan Privasi</h2>
+        <p>Kami dapat memperbarui Kebijakan Privasi ini untuk mencerminkan perubahan dalam praktik kami. Modifikasi signifikan akan dikomunikasikan melalui platform Abilify atau cara lain.</p>
+
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini, silakan hubungi kami di <a href="mailto:contact@abilifyplatform.com">contact@abilifyplatform.com</a>.</p>
+
+        <p><b>Dengan menggunakan platform web Abilify, Anda setuju dengan ketentuan yang dijelaskan dalam Kebijakan Privasi ini.</b>
+            <input type="checkbox" id="agreeCheckbox" name="checkbox1">
+        </p>
+        <button id="backButton" disabled>Anda Telah Setuju</button>
+    </div>
+
+
+    <script>
+          // Menangkap elemen checkbox dan tombol kembali
+          const agreeCheckbox = document.getElementById('agreeCheckbox');
+          const backButton = document.getElementById('backButton');
+
+          // Menetapkan fungsi yang akan dijalankan saat checkbox diubah
+          agreeCheckbox.addEventListener('change', function() {
+              // Mengaktifkan atau menonaktifkan tombol kembali berdasarkan status checkbox
+              backButton.disabled = !this.checked;
+          });
+
+          // Menetapkan fungsi yang akan dijalankan saat tombol kembali diklik
+          backButton.addEventListener('click', function() {
+              // Kembali ke halaman sebelumnya jika checkbox telah dicentang
+              if (agreeCheckbox.checked) {
+                  history.back();
+              }
+          });
+    </script>
+</body>
+</html>

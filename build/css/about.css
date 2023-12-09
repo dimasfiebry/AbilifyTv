@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+html, body{
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: auto;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar{
+    position:fixed;
+    transition: top 1s ease;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    transition: ease 2s;
+    height: 25px;
+    z-index: 2;
+}
+
+.navbar.hidden{
+    top: -75px;
+    transform: (20);
+}
+
+.div-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 4rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgb(226, 226, 226);
+    height: 100%;
+}
+
+.a-nav{
+    text-decoration: none;
+    color: #288870;
+    height: 20px;
+
+}
+.red-nav{
+    text-decoration: none;
+    color: #288870;
+    height: 20px;
+
+}
+.a-nav:hover{
+    color: #4a4a4a;
+    cursor: pointer;
+    
+}
+
+.red-nav:hover{
+    color: #800002;
+    cursor: pointer;
+    
+}
+
+.logo-style{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: calc 1rem;
+
+}
+.img-style{
+    width: 1.40rem;
+    margin-right: 15px;
+}
+
+.logo-style:hover{
+    cursor: pointer;
+    
+}
+.judul{
+    
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #288870;
+
+}
+.menu-navbar{
+    color: #047659;
+    display: flex;
+    flex-direction: row;
+    margin-left: calc 3.5rem;
+    margin-right: calc 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: small;
+    padding-left: 60px;
+    list-style-type: none;
+}
+
+.nav-margin{
+    margin-right: 40px;
+}
+
+.nav-margin:hover{
+    color: #6e6e6e;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 75ms;
+}
+ 
+.nav-red-margin:hover{
+    color: #800002;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 75ms;
+}
+
+.ul-profile{
+    padding-left: 5rem/* 80px */;
+    padding-right: 5rem/* 80px */;
+
+}
+.li-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.li-profile:hover{
+    color: #6e6e6e;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 75ms;  
+}
+
+
+.text-profile{
+    margin-left: 10px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+.lucide-profile{
+    width: 1.25rem;
+}
+/* Section History */
+/* ---------------------
+--------------------- */
+
+.sectionh{
+    background: #dbdbdb;
+    /* margin-bottom: 20px; */
+}
+
+.main-history{
+    height: 175vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-atas{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    background-color: #27856c77;
+}
+
+.box-atas{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    height: 80%;
+    margin-top: 50px;
+    border-radius: 18px;
+    background: #002219;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    opacity: 20%;    
+}
+
+.container-judul-history{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.judul-history{
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.container-judul-history>p{
+    color: #ffffff;
+    text-align: justify;
+    word-spacing: 10px;
+    letter-spacing: 2.2px;
+    line-height: 24px;
+    
+}
+
+.scroll{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.lucide-profile{
+    width: 1.25rem;
+}
+
+/* KHUSUS HOVER */
+/* ------------------
+------------------ */
+
+.a-nav:hover{
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.red-nav:hover{
+    color: #800002;
+    cursor: pointer;
+}
+
+.li-profile:hover{
+    color: #6e6e6e;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 75ms;   
+}
+
+.nav-margin:hover{
+    color: #6e6e6e;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 75ms;
+}
+ 
+.nav-red-margin:hover{
+    color: #800002;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 75ms; 
+}
+
+.logo-style:hover{
+    cursor: pointer;   
+}
+
+.member:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 30px #975b5ba6 ;
+}
+
+
+
+/* OUR MEMBER DAN COMMUNITY NETWORK */
+/* --------------------------------------
+-------------------------------------- */
+
+.judul-member{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    color: #00392b;
+    letter-spacing: 1.3px;
+    word-spacing: 4px;
+    font-size:large;
+    padding-bottom: 70px;
+}
+
+.container-member1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45vh;
+    justify-content: center;
+    height: 1%;
+    padding: 6%;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    color: #00392b;
+    border: 5px solid white ;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 4%;
+    box-shadow: -1px 1px 40px #5858588a;
+    transition: ease .2s;
+    text-align: center;
+}
+
+.image-member{
+    padding: 0.005px;
+    border-radius: 100%;
+    object-fit: contain;  
+    width: 210px;
+    height: 210px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+
+.nama-member{
+    align-items: center;
+    padding-top: 105px;
+    padding-left: 0px;
+    font-size: small;
+    font-weight: 700;
+}
+
+.nama-member-logo{
+    align-items: center;
+    padding-top: 90px;
+    padding-left: 0px;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/* Section Policy and privacy */
+/* -------------------------------
+------------------------------- */
+
+.sectionp{
+    background: rgb(0, 26, 11);
+    /* margin-bottom: 20px; */
+    background-image: url(/item/bg2.jpg);
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    /* width: 100vw;
+    height: 100vw; */
+}
+
+.main-sectionp{
+    height: 50vh;
+    display: flex;
+    /* position: relative; */
+    /* object-fit: cover; */
+    flex-direction: column;
+    background-color: #00392b81;
+}
+
+
+.judul-policy{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container-policy {
+    text-align: left;
+    flex-direction: row;
+}
+
+
+.text-policy{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 900px;
+    /* color: #b7d8d0;  */
+    display: inline-block; 
+    padding: 8px 12px; 
+    border: 2px solid #00392b; 
+    border-radius: 5px;
+    text-align: justify;
+    transform: translateY(20px); /* Mulai dengan translasi ke bawah */
+    transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.button-container{
+    margin-top: 80px;
+    margin-left: 1200px; /* Atur jarak antara teks dan tombol */
+    justify-content: center;
+    color: black;
+    /* background-color: transparent; */
+}
+
+
+.floating-text.animate {
+    opacity: 1;
+    transform: translateY(2); /* Kembali ke posisi awal */
+  }
+
+.button-policy{
+    color: rgb(216, 195, 195);
+    border: none;
+    /* background-color: transparent; */
+    margin: 20px;
+    /* color: black;    */
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 200px;
+    color: white; 
+    display: inline-block; 
+    padding: 8px 12px; 
+    border: 2px solid #00392b; 
+    border-radius: 5px;
+    background-color: rgba(0, 57, 43, 0); ;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.button-policy:hover{
+    color: #00392b;
+    /* color: black; */
+    background-color: #dbdbdb; /* Warna latar belakang saat hover */
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 30px #176d28a6 ;
+}
+
+/* Gaya Kebijakan Privasi */
+.ol-policy {
+    list-style-type: none; /* Menghilangkan marker urutan */
+}
+
+.ol-policy > li {
+    margin-bottom: 20px;
+}
+
+.ol-policy h2 {
+    color: white;
+}
+
+.ol-policy p {
+    margin-top: 10px;
+}
+
+/* Gaya Untuk List dalam List (Sub-list) */
+.ol-policy ul {
+    list-style-type: disc; /* Gaya marker untuk sub-list */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ol-policy ul li {
+    margin-bottom: 5px;
+}
+
+/* Gaya Untuk Kontrol Checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.img-policy{
+    width: 1.40rem;
+    margin-right: 15px;
+}
+
+
+/* HELP */
+/* ------
+-------- */
+
+.sectione{
+    background: #dbdbdb;
+}
+
+.main-sectione{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.text-help{
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.text-help p{
+    /* text-align: justify; */
+    text-align: center;
+    color: black;
+    margin-left: 50PX;
+    margin-right: 50px;
+}
+
+.judul-help{
+    color: #00392b;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+}
+
+.ul-help{
+    color: #dbdbdb00;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+.ul-help a{
+    color: black;
+}
+
+.li-help1{
+}
+
+.li-help{
+    margin: 20px;
+    /* color: black;    */
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 200px;
+    color: black; 
+    display: inline-block; 
+    padding: 8px 12px; 
+    border: 2px solid #00392b; 
+    border-radius: 5px;
+    background-color: rgba(0, 57, 43, 0); ;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .ul-help:hover{
+    color: black;
+    transition: color 0.3s ease;
+
+} */
+
+.li-help:hover{
+    color: black;
+    background-color: #dbdbdb; /* Warna latar belakang saat hover */
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 30px #176d28a6 ;
+}
+
+/* BAGIAN FOOTER  */
+/* --------------------
+-------------------- */
+
+.footer{
+    background: #ffffff;
+    height: 30vh;
+    /* margin-top: 400px; */
+}
+
+.container-footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+}
+
+.bg-footer{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 20%;
+}
+
+
+/* UKURAN UNTUK DESKTOP (768) DAN MOBILE (480) */
+/* ------------------------------------------------
+------------------------------------------------ */
+
+@media only screen and (max-width: 768px){
+    .container-judul-history {
+        width: 80%; /* Ubah lebar kontainer judul untuk tablet */
+    }
+
+    .judul-history {
+        font-size: x-large; /* Ubah ukuran font judul untuk tablet */
+    }
+
+    .container-member1 {
+        flex-direction: column; /* Tampilkan member dalam satu kolom untuk tablet */
+    }
+
+    .member {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container-judul-history {
+        width: 100%; /* Ubah lebar kontainer judul untuk mobile */
+    }
+
+    .judul-history {
+        font-size: large; /* Ubah ukuran font judul untuk mobile */
+    }
+
+    .container-member1 {
+        padding: 3%; /* Berikan sedikit padding untuk mobile */
+    }
+}

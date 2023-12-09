@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tokenreport.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div id="dimas" class="div-navbar">
+            <a href="#" class="logo-style space-x-4">
+                <img src="img/logo1.svg" alt="" class="img-style" />
+                <h1 class="judul">Ability For You</h1>
+            </a>
+            <ul class="menu-navbar">
+                <li class="nav-margin" >
+                    <a class="a-nav" href="index.html">Home</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="social.html">Social</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="news.html">News</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="about.html">About</a>
+                </li>
+                <li class="nav-red-margin" style="color: black">
+                    <a class="red-nav" href="report.html"  style="color: black">Report</a>
+                </li>
+            </ul>
+            <ul class="ul-profile" style="color: #288870">
+                <li class="li-profile">
+                    <i data-lucide="user-circle-2" class="lucide-profile"></i>
+
+                    <p class="text-profile">Profile</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-token">
+        <main class="main-token-section">
+            <div class="form-box">
+                <h2>Token Report</h2>
+                <div class="token-content">
+                    <p>Token anda adalah #<a href="viewreport.html" id="randomTextDisplay" style="color: #288870;"></a></p>
+                    <p>Permintaan report telah dibuat. Silakan cek email untuk melihat nomor tiket anda lagi.</p>
+                    <p>Terima kasih telah menghubungi kami.</p>
+                    <p>Tim Abilify</p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script>
+        const randomTextDisplay = document.getElementById('randomTextDisplay');
+        randomTextDisplay.textContent = getRandomText(5);
+
+        function getRandomText(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let result = '';
+            for (let i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>

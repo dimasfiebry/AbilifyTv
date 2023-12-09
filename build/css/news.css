@@ -207,7 +207,7 @@ background: #000;
   border-radius: 10px;
   margin-right: 60px;
   box-shadow: 2px 3px 20px #003023d8;
-  background-image: url('../../assets/images/fitur2.jpg');
+  background-image: url('img/fitur2.jpg');
   background-size: cover;
 }
 .event:hover{
