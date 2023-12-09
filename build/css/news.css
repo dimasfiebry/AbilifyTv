@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+
+html,
+body {
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding: auto;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* -------------------------
+----------------------------- */
+
+.section1 {
+  background: #ffffff;
+}
+.main-opening {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.container-atas {
+  /* background: #000; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  /* justify-content: center; */
+  height: 30vh;
+  width: 100%;
+  align-items: center;
+}
+.box-atas {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  height: 80%;
+  margin-top: 50px;
+  border-radius: 18px;
+  background: #002219;
+
+  justify-content: center;
+  align-items: center;
+}
+.bg-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  opacity: 20%;
+}
+
+.container-judul-opening {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.judul-opening {
+  color: #ffffff;
+  font-size: xx-large;
+  font-weight: 800;
+}
+.container-judul-opening > p {
+  color: #ffffff;
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+}
+.article {
+  margin-bottom: 0;
+  /* background: #575757; */
+  margin-left: 160px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container-article {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background: #000; */
+  width: 100%;
+  height: 23%;
+}
+.kotak-article {
+  background: #f0f0f0;
+  width: 500px;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 20px 16px 40px #0022196b;
+  margin-left: 142px;
+}
+.container-img-article {
+  width: 36%;
+  height: 100%;
+  background: #000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.img-article {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.container-deskripsi {
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 64%;
+  height: 100%;
+  background: rgb(220, 220, 220) 0c0;
+}
+.judul-article {
+  padding-top: 14px;
+  margin: 0;
+  color: #004432;
+  width: 100%;
+  text-align: left;
+  height: 20%;
+  margin-left: 20px;
+}
+.deskripsi {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 84%;
+  height: 80%;
+  margin-top: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  color: #004432;
+  font-size: x-small;
+  text-align: left;
+  font-weight: 600;
+  word-spacing: 1.5px;
+  letter-spacing: 0.2px;
+}
+.kotak-article:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  box-shadow: 6px 6px 16px#003023d8;
+}
+
+/* --------------------------
+-----------------------------
+-----------------------------
+-----------------------------
+ */
+
+.section2 {
+  background: #ffffff;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.main-section2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.eventjudul {
+  margin-left: 20px;
+  /* background: #575757; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container-event {
+  width: 100%;
+  white-space: nowrap;
+  height: 30%;
+  align-items: center;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.container-event::-webkit-scrollbar {
+  display: none;
+}
+
+.event {
+background: #000;
+  height: 200px;
+  width: 25%;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 60px;
+  box-shadow: 2px 3px 20px #003023d8;
+  background-image: url('../../assets/images/fitur2.jpg');
+  background-size: cover;
+}
+.event:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: ease-in-out 0.2s;
+    
+
+    /* opacity: 80%; */
+}
+.container-teks-event{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 250px;
+    width: 100%;
+    
+    /* background: #d80000f0; */
+}
+.container-teks-event:hover{
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 90px;
+    justify-content: end;
+
+}
+.judul-event{
+    margin-left: 20px;
+    text-shadow: 1px 2px 13px#000000;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background: #ffffff;
+  height: 30vh;
+}
+.container-footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #000000;
+}
+.bg-footer {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 20%;
+}

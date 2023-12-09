@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/abilify.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+
+  <body>
+    <main class="container-abilify">
+      <div class="container-atas">
+        <h1 class="judul">Abilify TV</h1>
+      </div>
+      <div class="container-kamera">
+        <div class="kamera-orang">
+          <video
+            loop
+            id="video1"
+            width="500"
+            height="500"
+            style="
+              min-width: 100%;
+              min-height: 100%;
+              object-fit: cover;
+              background-size: 100% 100%;
+            "
+          >
+            <source id="tes" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="kamera-saya">
+          <video
+            id="video"
+            class="video"
+            style=" min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            background-size: 100% 100%;"
+          ></video>
+        </div>
+      </div>
+      <div class="container-tombol">
+        <a class="report" href="../pages/social.html">Report</a>
+        <button class="report" id="next">Next</button>
+        <div class="right-button">
+          <button class="report" id="start">Start</button>
+          <a class="report" id="stop" href="social.html">Stop</a>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../js/abilify.js"></script>
+</html>

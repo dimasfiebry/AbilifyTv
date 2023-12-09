@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div id="registrationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <img class="img" src="../../assets/images/logo1.svg" alt="">
+        <p class="sign" align="center">REGISTRASI</p>
+        <form class="form1" onsubmit="return registerUser()"">
+            <input class="un" type="text" align="center" placeholder="Username" id="username">
+            <input class="pass" type="password" align="center" placeholder="Password" id="password">
+            <input class="pass" type="password" align="center" placeholder="Konfirmasi Password" id="confirmPassword">
+            <button type="submit" class="submit" align="center">Register</button>
+            <p class="forgot" align="center">Sudah Punya Akun? <a class="my-link" href="login.html">Silahkan Log in di sini!</a></p>
+        </form>
+    </div>
+
+    <script src="../js/signup.js"></script>
+</body>
+
+</html>

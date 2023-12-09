@@ -1,183 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
 
-
-@keyframes blink {
-    0% {
-        filter: brightness(0);
-    }
-
-
-
-    80% {
-        filter: brightness(3);
-        filter: blur(10);
-
-    }
-
-    100% {
-        filter: brightness(1);
-    }
-
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap');
-
-html,
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'plus Poppins', sans-serif;
-    background-color: rgb(0, 0, 0);
+html,body {
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
     padding: auto;
     margin: auto;
     scroll-behavior: smooth;
+    
+    
 }
-
-a {
+a{
     text-decoration: none;
 }
 
+.home-section{
+    background-color: rgb(248, 248, 248);
+}
+.main-home-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+
+    
+
+}
+.div1-main-home-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.h1-div-main-home-section{
+    color: #047659;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    line-height: 1.5;
+}
+.span-creativity{
+    color: #e54a4c;
+}
+.text-div-main-home-section{
+    color: #005d46;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+.button-join{
+    background: #034e3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 500px;
+    height: 40px;
+    border-radius: 8px;
+
+    /* background-image: linear-gradient(#047659, rgb(217, 217, 217)); */
+}
+.button-join>a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
 
 
-.hi {
-    text-shadow: 1px 1px 4px rgb(198, 39, 226);
 
 }
 
-
-
-
-
-/* .deskripsi:has(.ub:hover) {
-    opacity: 60%;
-} */
-
-.deskripsi:has(.ub:hover):not(.ub) {
-    color: rgba(190, 190, 190, 0.578);
-}
-
-.ub {
-    position: relative;
-    display: inline-block;
+.button-join:hover {
+    cursor: pointer;
+    background-color: #6e6e6e;
+    color: rgb(0, 0, 0);
 
 }
+.div2-main-home-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-div2-main-home-section{
+    width: 600px/* 48px */;
+    padding-right: 80px;
+    border-radius: 0.5rem/* 8px */;
+    
+}
 
-.ub::after {
-    content: '';
+/* --------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------*/
+/* Section 2 - Fitur */
+
+.section2{
+    background-color: rgb(240, 240, 240);
+}
+.main-fitur{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.container1-fitur{
+    
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 45px;
+    margin-top: 40px;
+    
+    
+}
+
+.judul-fitur{
+    color: #034e3b;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    width: 48vw; 
+    padding-left: 260px;
+}
+.deskripsi-fitur{
+    color: #034e3b;
+    align-items: start;
+    text-align: justify;
+    padding-left: 100px;
+    width: 62vw;
+    padding-right: 300px;
+    word-spacing:2px;
+    line-height: 24px;
+
+
+}
+
+.container2-fitur{
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+.fitur{
+    color: #034e3b;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: #ffffff;
+    width: 240px;
+    height: 340px;
+    border-radius: 20px;
+    box-shadow: 2px 8px 40px #c2c2c2 ;
+    
+}
+
+.fitur:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    box-shadow: 2px 8px 40px #145e4ba6 ;
+    transition: 0.8s;
+
+    
+}
+.container-fitur1{
+    height: 35%;
+
+}
+.image-fitur1{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+      
+}
+.nama-fitur{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: small;
+    font-weight: 700;
+
+}
+.deskripsi{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:11px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.trynow{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-left: 20px; 
+    border-radius: 60px;
+    justify-content: center;
+    
+    
+    color: #034e3b;
+    font-size: small;
+    
+    transition: ease ;
+    background: transparent;
+    border: none;
+    width: 120px;
+    height: 38px;
+    
+}
+.trynow:hover{
+    color: aliceblue;
+    background-color: #2d8770;
+    text-align: center;    
+}
+
+/* -----------------------
+--------------------------
+--------------------------
+--------------------------
+--------------------------
+-------------------------- */
+
+/* section 3 - acces */
+
+.section3{
+    background: #f7f7f7;
+}
+.main-akses{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+
+}
+.container-judul-akses{
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.judul-akses{
+    width: 100%;
+    text-align: center;
+    color: #034132;
+    font-size:xx-large;
+    word-spacing: 4px;
+}
+.deskripsi-akses{
+    padding-top: 0%;
+    color: #023528;
+    padding-left: 330px;
+    padding-right: 330px;
+    text-align: center;
+    word-spacing: 2px;
+    
+}
+.container-akses{
+    display: flex;
+    flex-direction: row;
+    background: #004838;
+    height: 50%;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.bg-akses{
+    height: 100%;
+    width: 100%;
+    opacity: 15%;
+}
+.box-akses{
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
 
-
-    transform: translateY(-140%);
-
-    background-image: url('../img/Logo_Universitas_Brawijaya.svg-2.png');
-    background-size: cover;
-    background-position: end;
-    width: 80px;
-    height: 80px;
-
-    opacity: 0;
 }
-
-.ub:hover::after {
+.akses{
+    display: flex;
+    flex-direction: column;
+    background: #00000041;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 300px;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.h2-akses{
+    margin-top: 20px;
+    color: #f7f7f7;
     
-    margin-left:100px;
-    opacity: 1;
-    animation: blink 2s alternate;
-    animation-timing-function: ease-in-out;
+}
+.keterangan-akses{
+    color: #f7f7f7;
+    text-align: justify;
+    text-align-last: center;
 }
 
 
-
-.deskripsi2:has(.now:hover) {
-    color: rgba(190, 190, 190, 0.578);
-}
-
-.now {
-    position: relative;
-    display: inline-block;
-
-}
-
-
-
-.now:hover::after {
-    margin-left: 120px;
-    opacity: 1;
-    animation: blink 2s alternate;
-    animation-timing-function: ease-in-out;
-}
-
-.deskripsi2:has(.front:hover) {
-    color: rgba(190, 190, 190, 0.578);
-}
-
-
-
-
-/* front */
-.front {
-    position: relative;
-    display: inline-block;
-
-}
-
-.front:hover::after {
-    margin-left: 60px;
-    opacity: 1;
-    animation: blink 2s alternate;
-    animation-timing-function: ease-in-out;
-}
-
-.container-sosmed:hover .teks{
-    opacity: 1;
-    display: inline;
-}
-
-
-
-/* web */
-
-.web {
-    position: relative;
-    display: inline-block;
-
-}
-
-
-.web:hover::after {
-    margin-left: 180px;
-    opacity: 1;
-    animation: blink 2s alternate;
-    animation-timing-function: ease-in-out;
-}
-
-/* app */
-
-.app {
-    position: relative;
-    display: inline-block;
-
-
-}
-
-
-
-.app:hover::after {
-    margin-right: 120px;
-    opacity: 1;
-    animation: blink 2s alternate;
-    animation-timing-function: ease-in-out;
-}
-
-
-
-
-/* 
-.htmlicons:hover {
-    background-color: white;
-    
-    ;
-    
-
-}
-.html:hover{
-    fill: black;
-} */

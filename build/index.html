@@ -2,384 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UAP</title>
-    <link rel="stylesheet" href="/build/css/index.css">
-    <link rel="stylesheet" href="/build/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
-    <nav class="fixed flex flex-row justify-end py-10 h-24 z-50 backdrop-blur-sm ">
-        <div class=" flex flex-col h-screen w-20 items-end mt-0 space-y-36 ">
-            <a href=""
-                class="two-line flex flex-row text-white text-4xl h-9 w-14 items-center pl-4 font-bold mr-2 hover:rotate-[270deg] hover:text-purple-700  transition duration-[0.6s]">
-                <p>|</p>
-                <p>|</p>
+    <nav id="navbar" class="navbar">
+        <div id="dimas" class="div-navbar">
+            <a href="#" class="logo-style space-x-4">
+                <img src="img/logo1.svg" alt="" class="img-style" />
+                <h1 class="judul">Ability For You</h1>
             </a>
-            
-        </div>
-        <div
-            class="navbar-atas flex flex-row h-full mt-3 items-end w-screen text-gray-400 font-[400] text-sm pl-32 transition-all">
+            <ul class="menu-navbar">
+                <li class="nav-margin" style="color: black">
+                    <a class="a-nav" href="index.html" style="color: black">Home</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="login.html">Social</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="login.html">News</a>
+                </li>
+                <li class="nav-margin">
+                    <a class="a-nav" href="login.html">About</a>
+                </li>
+                <li class="nav-red-margin">
+                    <a class="red-nav" href="login.html">Report</a>
+                </li>
+            </ul>
+            <ul class="ul-profile" style="color: #288870">
+                <li class="li-profile">
+                    <i data-lucide="user-circle-2" class="lucide-profile"></i>
 
-            <ul class="flex flex-row space-x-16">
-                <li>
-                    <a class=" text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-400"
-                        href="index.html">Profiles</a>
-                </li>
-                <li>
-                    <a href="experiences.html">Experiences</a>
-                </li>
-                <li>
-                    <a href="#">Project</a>
-                </li>
-                <li>
-                    <a href="#">Abouts</a>
+                    <p class="text-profile">Profile</p>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section class=" bg-black w-screen md:">
-        <main class="flex h-screen w-full flex-col items-start  pl-52 pt-28"
-            style="background-image: url('img/DF-2.png'); background-size: cover;">
-            <div class="h-72  pt-36 w-[48%] space-y-12">
-                <h1 class="text-white font-extrabold text-6xl"> <span
-                        class="hi text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-purple-400 animate-pulse shadow-transparent ">Hi,</span>
-                    I am Dimas</h1>
-                <p id="deskripsi" class="deskripsi text-white font-thin text-justify tracking-wide leading-8">
-                    I am a student at <a
-                        class="ub text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-medium hover:text-lg text-justify hover:animate-bounce hover:ml-2"
-                        href="https://ub.ac.id/id/" id="UB">Brawijaya University
-                    </a> aspiring
-                    to become a software engineer. My academic journey
-                    focuses on acquiring the skills and knowledge necessary
-                    to excel in the field of software development.
+    <!-- Section 1 / Home -->
+
+    <section class="home-section">
+        <main class="main-home-section">
+            <div class="div1-main-home-section">
+                <h1 class="h1-div-main-home-section">
+                    Discover <span class="span-creativity">Creativity</span> and
+                    <span class="span-creativity">Inspirational</span> Stories from
+                    the Inclusive Community
+                </h1>
+                <p class="text-div-main-home-section" style="color: #112e11">
+                    Explore captivating art and inspiring stories in our
+                    <b>inclusive online community</b>, where diverse perspectives come
+                    together to celebrate creativity and mutual inspiration. Join us
+                    and change the way you see the world.
+                </p>
+                <p class="button-join"><a href="login.html">Join Us</a></p>
+            </div>
+            <div class="div2-main-home-section">
+                <img src="img/Disability1.png" alt="Illustration" class="img-div2-main-home-section"
+                    id="image1" />
+            </div>
+        </main>
+    </section>
+
+    <!-- Section 2 / fitur -->
+    <section class="section2">
+        <main class="main-fitur">
+            <div class="container1-fitur">
+                <h2 class="judul-fitur">
+                    Prepare yourself, let's bravely explore your world together
+                </h2>
+                <p class="deskripsi-fitur">
+                    Discover the essence of our <b>features</b> – crafted to be your
+                    reliable companions throughout <b>your journey</b>. We're here to
+                    assist and enhance <b>your experience</b>, ensuring a seamless and
+                    enjoyable adventure.
                 </p>
             </div>
-            <div class="menu-bawah text-gray-400 font-[400] text-sm flex flex-row pt-28">
-                <ul class="flex flex-row space-x-16">
-                    <li>
-                        <a class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-400"
-                            href="index.html">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="experiences.html">Experiences</a>
-                    </li>
-                    <li>
-                        <a href="#">Project</a>
-                    </li>
-                    <li>
-                        <a href="#">Abouts</a>
-                    </li>
-                </ul>
+            <div class="container2-fitur">
+                <div class="fitur">
+                    <div class="container-fitur1">
+                        <img src="img/fitur1.jpg" class="image-fitur1" alt="" />
+                    </div>
+                    <h3 class="nama-fitur">Abilify TV</h3>
+                    <p class="deskripsi">
+                        Abilify TV lets users connect and greet each other in real-time,
+                        creating an exciting and unique experience of spontaneous
+                        communication with random people.
+                    </p>
+                    <a href="login.html" class="trynow"> Try Now </a>
+                </div>
+                <div class="fitur">
+                    <div class="container-fitur1">
+                        <img src="img/fitur2.jpg" class="image-fitur1" alt="" />
+                    </div>
+                    <h3 class="nama-fitur">Thematic Chat</h3>
+                    <p class="deskripsi">
+                        Thematic Chat allows users to connect with others who share
+                        common interests, engaging in real-time conversations on topics
+                        such as sports, fashion, health, and more
+                    </p>
+                    <a href="login.html" class="trynow"> Try Now </a>
+                </div>
+                <div class="fitur">
+                    <div class="container-fitur1">
+                        <img src="img/fitur3.jpg" class="image-fitur1" alt="" />
+                    </div>
+                    <h3 class="nama-fitur">News Paper</h3>
+
+                    <p class="deskripsi">
+                        News Paper offers a curated selection of current events updates
+                        and insightful articles, keeping you well-informed about an
+                        upcoming happenings.
+                    </p>
+                    <a href="login.html" class="trynow"> Try Now </a>
+                </div>
             </div>
         </main>
     </section>
 
-
-
-    <!-- Section2 -->
-
-
-    <section class=" e w-screen">
-        <main class="h-[150vh] w-full  pl-52 flex flex-col  ">
-            <div class="flex flex-row pt-32">
-                <div class="w-1/2 space-y-16 flex flex-col ">
-                    <blockquote class="text-white font-extrabold text-5xl tracking-wide">
-                        Nunc Aut Nunquam
-                    </blockquote>
-                    <p class="deskripsi2  text-white text-justify tracking-wider leading-8 font-thin">
-                        I live by the principle <span
-                            class="now text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-medium text-justify hover:animate-bounce hover:ml-2">Now
-                            or never</span> always seizing
-                        learning opportunities as long as I can. This belief drives
-                        me to continually grow personally, facing
-                        each learning chance with determination and enthusiasm.
-                        I believe continuous learning in <span
-                            class="front text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-medium text-justify hover:animate-bounce hover:ml-2">Front
-                            End Developer</span> unlocks my potential and fulfills life goals
-                    </p>
-                </div>
-                <div
-                    class="flex flex-col text-right w-96 ml-12 h-3/4  pl-16 border-l-[0.3px] border-spacing-x-6 space-y-16 pt-3  text-right tracking-wider leading-8">
-                    <h2 class="text-white font-bold text-2xl">
-                        Send Me Something
-                    </h2>
-                    <p class="text-white font-thin">
-                        Could you please send me a message or a few messages anonymously? Feel free to share any
-                        thoughts or reflections you have in mind. Thank you!
-                    </p>
-                    <button
-                        class="p-[2px] h-12 flex inline-flex bg-gradient-to-r from-purple-400 to-pink-500 hover:bg-gradient-to-l rounded-lg duration-1000 hover:cursor-pointer  hover:transition-all">
-                        <a class="text-white w-full h-full bg-black text-xl font-bold flex flex-col justify-center items-center rounded-lg"
-                            href="https://ngl.link/NGL">Send</a>
-                    </button>
-
-                </div>
+    <!-- Section 3 / Acces -->
+    <section class="section3">
+        <main class="main-akses">
+            <div class="container-judul-akses">
+                <h2 class="judul-akses">Run and Adventure Peacefully</h2>
+                <p class="deskripsi-akses">
+                    Emphasizing a robust <b>security framework</b>, this website is
+                    accessible <b>only</b> to a select group of individuals, ensuring
+                    an environment of <b>inclusive</b>. You can rest assured, as an
+                    additional safety measure, a reporting feature is available.
+                </p>
             </div>
 
-            <div class="flex flex-row space-y-4 space-x-10 h-56">
-                <div class="space-y-12 w-1/2 pt-16">
-                    <h1 class="text-white font-extrabold text-3xl tracking-wide">Social Media</h1>
-                    <p class="text-white text-justify tracking-wider leading-8 font-thin">
-                        I can assist you in creating <span
-                            class="web text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-medium text-justify hover:animate-bounce hover:ml-2">websites</span>
-                        or <span
-                            class="app text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-medium text-justify hover:animate-bounce hover:ml-2">mobile
-                            applications.</span> Don't forget to follow me online
-                        for updates!
-                    </p>
-                </div>
-
-                <div class="  flex flex-col w-1/2 p-24 justify-center ">
-                    <div class="flex flex-row  space-x-16">
-                        <div class="container-sosmed flex flex-col bg-gray space-y-12">
-
-                            <p class="teks bg-gray-300 absolute -translate-x-12 rounded-sm font-medium hidden">
-                                Follow me on <span
-                                    class="text-transparent bg-clip-text bg-gradient-to-l from-purple-600 to-pink-700">Instagram</span>
-                            </p>
-                            <a class=" rounded-lg w-16 h-[58px] flex justify-center"
-                                href="https://www.instagram.com/fiebryhoga/?next=%2F">
-                                <img class="sosmed w-12 cursor-alias " src="img/instagram.svg" alt=""
-                                    id="instagramImage">
-                            </a>
-                        </div>
-                        <div class="container-sosmed flex flex-col bg-gray space-y-12">
-
-                            <p class="teks bg-gray-300 absolute -translate-x-12 rounded-sm p-1 font-medium hidden">My
-                                experiences on <span
-                                    class="text-transparent bg-clip-text bg-gradient-to-l from-purple-600 to-pink-700">LinkedIn</span>
-                            </p>
-                            <a class=" rounded-lg w-16 h-[58px] flex justify-center"
-                                href="https://www.linkedin.com/in/dimas-fiebry-prayhoga-putra-97109729b/">
-                                <img class="sosmed w-12 cursor-alias " src="img/linkedin.svg" alt=""
-                                    id="instagramImage">
-                            </a>
-                        </div>
-                        <div class="container-sosmed flex flex-col bg-gray space-y-12">
-
-                            <p class="teks bg-gray-300 absolute -translate-x-12 rounded-sm p-1 font-medium hidden">See
-                                my project On <span
-                                    class="text-transparent bg-clip-text bg-gradient-to-l from-purple-600 to-pink-700">Git
-                                    Hub</span></p>
-                            <a class=" rounded-lg w-16 h-[58px] flex justify-center"
-                                href="https://github.com/dimasfiebry">
-                                <img class="sosmed w-12 cursor-alias " src="img/github.svg" alt="" id="instagramImage">
-                            </a>
-                        </div>
-
-
+            <div class="container-akses">
+                <img src="img/Aksesbg.jpg" class="bg-akses" alt="" />
+                <div class="box-akses">
+                    <div class="akses">
+                        <h2 class="h2-akses">Users</h2>
+                        <p class="keterangan-akses">
+                            Lorem ipsum dolor sit, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
-                    <div class="flex flex-row  space-x-16 justify">
-                        <div class="container-sosmed flex flex-col bg-gray space-y-12">
-
-                            <p class="teks bg-gray-300 absolute -translate-x-12 rounded-sm p-1 font-medium hidden">
-                                Follow my activity on <span
-                                    class="text-transparent bg-clip-text bg-gradient-to-l from-purple-600 to-pink-700">Twitter</span>
-                            </p>
-                            <a class=" rounded-lg w-16 h-[58px] flex justify-center"
-                                href="https://twitter.com/FiebryDimas">
-                                <img class="sosmed w-12 cursor-alias " src="img/twitter.svg" alt="" id="instagramImage">
-                            </a>
-                        </div>
-                        <div class="container-sosmed flex flex-col bg-gray space-y-12">
-
-                            <p class="teks bg-gray-300 absolute -translate-x-12 rounded-sm p-1 font-medium hidden">My
-                                number <span
-                                    class="text-transparent bg-clip-text bg-gradient-to-l from-purple-600 to-pink-700">Phone</span>
-                            </p>
-                            <a class=" rounded-lg w-16 h-[58px] flex justify-center" href="https://wa.me/6285730979537">
-                                <img class="sosmed w-12 cursor-alias " src="img/phone.svg" alt="" id="instagramImage">
-                            </a>
-                        </div>
-                        <div class="container-sosmed flex flex-col bg-gray space-y-12 z-10">
-
-                            <p class="teks bg-gray-300 absolute -translate-x-12 rounded-sm p-1 font-medium hidden">Send
-                                u message on <span
-                                    class="text-transparent bg-clip-text bg-gradient-to-l from-purple-600 to-pink-700">Mails</span>
-                            </p>
-                            <a class=" rounded-lg w-16 h-[58px] flex justify-center"
-                                href="mailto:dimasfiebry@student.ub.ac.id">
-                                <img class="sosmed w-12 cursor-alias " src="img/mails.svg" alt="" id="instagramImage">
-                            </a>
-                        </div>
+                    <div class="akses">
+                        <h2 class="h2-akses">Parents</h2>
+                        <p class="keterangan-akses">
+                            Lorem ipsum dolor sit, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="akses">
+                        <h2 class="h2-akses">Facilitators</h2>
+                        <p class="keterangan-akses">
+                            Lorem ipsum dolor sit, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="akses">
+                        <h2 class="h2-akses">Developers</h2>
+                        <p class="keterangan-akses">
+                            Lorem ipsum dolor sit, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class=" pt-20 flex flex-col h-full w-full pr-48 space-y-10">
-                <h1 class="text-white font-extrabold text-3xl">Technology And Tools</h1>
-                <div class="flex flex-row space-x-24 pt-6">
-                    <div class="flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="w-12 pt-3" src="img/icons8-java-2.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">Java</p>
-                    </div>
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/icons8-python.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">Python</p>
-                    </div>
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/html.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">HTML</p>
-                    </div>
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/icons8-css-2.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">Css</p>
-                    </div>
-                    
-                </div>
-                <div class="flex flex-row space-x-24">
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/icons8-tailwind-css-2.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">Tailwind</p>
-                    </div>
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/icons8-javascript-2.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">JavaScript</p>
-                    </div>
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/icons8-react-2.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">React</p>
-                    </div>
-                    <div class="htmlicons flex flex-col border border-slate-300 w-48 h-24 items-center justify-center rounded-md ">
-                        <img class="html w-12 pt-3" src="img/icons8-sass-2.svg" alt="">
-                        <p class="font-medium text-white pt-2 text-xs w-full text-center">Sass</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-
         </main>
     </section>
-    <footer class="h-[6vh] bg-zinc-900 flex flex-col justify-center">
-        <p class="text-slate-400 text-md font-medium w-screen text-center backdrop-blur-md">Design by <span class="">Dimas Fiebry</span></p>
-
-
-
-    </footer>
-    <!-- <section class="  w-screen" id="sec-3">
-        <main class="h-[150vh] w-screen flex flex-col">
-            <div class="ml-52 flex-col">
-                <div>
-                    <h2 class="text-white text-6xl font-extrabold tracking-wider">
-                        Experiences
-                    </h2>
-                </div>
-                <div class="mt-20 flex flex-row]">
-                    <p class="text-white text-sm font-medium tracking-wider mr-28 pt-16 font-sans">
-                        <span
-                            class="text-5xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-400">30+</span>
-                        <br> <br> Achievements
-                    </p>
-                    <p class="text-white text-sm font-medium tracking-wide mr-48 pt-16 font-sans">
-                        <span
-                            class="text-5xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-400 ">6+</span>
-                        <br><br> Years Experiences IT Support <br>and Front End
-                    </p>
-                    <p class="bg-black text-white text-justify w-[430px] leading-8 tracking-wider">
-                        <span class="text-white text-lg font-semibold pb-10 font-">
-                            I derive immense satisfaction from tackling coding challenges, relishing the process of
-                            problem-solving.
-                        </span> <br> <br>Utilizing logical reasoning brings me great joy as I navigate through intricate
-                        code structures. Moreover, I find delight in the creative aspect of designing elegant solutions,
-                        merging functionality with a thoughtful and efficient design.
-                    </p>
-
-                </div>
-                <div class="pt-24 mr-24 flex flex-col space-y-28">
-                    <div class="flex flex-row space-x-24">
-                        <div class="flex flex-col h-52 w-72 rounded-t-md">
-                            <div class=" h-1/2">
-                                <img class="object-cover h-full w-full rounded-t-md" src="img/ex-1.png" alt="">
-                            </div>
-                            <div
-                                class=" h-full w-full border-[0.5px] border-white rounded-b-[4px] border-t-0 space-y-2 flex flex-col justify-center items-center">
-                                <h4 class=" text-white text-xl font-bold">1 ST Winner</h4>
-                                <p class="text-white text-sm font-normal" style="text-align: center;">National Essay
-                                    Competition Islamic University Of Surabaya</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col h-52 w-72 rounded-t-md">
-                            <div class=" h-1/2">
-                                <img class="object-cover h-full w-full rounded-t-md" src="img/ex-2.png" alt="">
-                            </div>
-                            <div
-                                class=" h-full w-full border-[0.5px] border-white rounded-b-[4px] border-t-0 space-y-2 flex flex-col justify-center items-center">
-                                <h4 class=" text-white text-xl font-bold">1 ST Winner</h4>
-                                <p class="text-white text-sm font-normal" style="text-align: center;">National Essay
-                                    Competition Islamic University Of Surabaya</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col h-52 w-72 rounded-t-md">
-                            <div class=" h-1/2">
-                                <img class="object-cover h-full w-full rounded-t-md" src="img/ex-3.jpeg" alt="">
-                            </div>
-                            <div
-                                class=" h-full w-full border-[0.5px] border-white rounded-b-[4px] border-t-0 space-y-2 flex flex-col justify-center items-center">
-                                <h4 class=" text-white text-xl font-bold">1 ST Winner</h4>
-                                <p class="text-white text-sm font-normal" style="text-align: center;">National Essay
-                                    Competition Islamic University Of Surabaya</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-row space-x-24">
-                        <div class="flex flex-col h-52 w-72 rounded-t-md">
-                            <div class=" h-1/2">
-                                <img class="object-cover h-full w-full rounded-t-md" src="img/ex-4.jpeg" alt="">
-                            </div>
-                            <div
-                                class=" h-full w-full border-[0.5px] border-white rounded-b-[4px] border-t-0 space-y-2 flex flex-col justify-center items-center">
-                                <h4 class=" text-white text-xl font-bold">1 ST Winner</h4>
-                                <p class="text-white text-sm font-normal" style="text-align: center;">National Essay
-                                    Competition Islamic University Of Surabaya</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex flex-col h-52 w-72 rounded-t-md hover:cursor-pointer hover:scale-125 transition-all">
-                            <div class=" h-1/2">
-                                <img class="object-cover h-full w-full rounded-t-md" src="img/ex-5.jpeg" alt="">
-                            </div>
-                            <div
-                                class=" h-full w-full border-[0.5px] border-white rounded-b-[4px] border-t-0 space-y-2 flex flex-col justify-center items-center">
-                                <h4 class=" text-white text-xl font-bold">1 ST Winner</h4>
-                                <p class="text-white text-sm font-normal" style="text-align: center;">National Essay
-                                    Competition Islamic University Of Surabaya</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex flex-col h-52 w-72 rounded-t-md hover:cursor-pointer hover:scale-125 transition-all">
-                            <div class=" h-1/2">
-                                <img class="object-cover h-full w-full rounded-t-md" src="img/ex-1.png" alt="">
-                            </div>
-                            <div
-                                class=" h-full w-full border-[0.5px] border-white rounded-b-[4px] border-t-0 space-y-2 flex flex-col justify-center items-center">
-                                <h4 class=" text-white text-xl font-bold">1 ST Winner</h4>
-                                <p class="text-white text-sm font-normal" style="text-align: center;">National Essay
-                                    Competition Islamic University Of Surabaya</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </main>
-    </section> -->
 </body>
-
+<script src="../js/script.js"></script>
+<!-- Script Lucide Icon -->
 <script src="https://unpkg.com/lucide@latest"></script>
-<script src="js/script.js"></script>
 <script>
     lucide.createIcons();
 </script>
 
 </html>
 
-
-
-
-
-<!-- text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-400 -->
+</html>
