@@ -10,6 +10,8 @@ html, body{
 
 a {
     text-decoration: none;
+    list-style-type: none;
+    color:#288870
 }
 
 .navbar{
@@ -424,7 +426,7 @@ a {
 
 .button-container{
     margin-top: 80px;
-    margin-left: 1200px; /* Atur jarak antara teks dan tombol */
+    margin-left: 1100px; /* Atur jarak antara teks dan tombol */
     justify-content: center;
     color: black;
     /* background-color: transparent; */
