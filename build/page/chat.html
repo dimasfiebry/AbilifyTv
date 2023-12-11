@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chat.css">
+    <title>Chat Room</title>
+</head>
+<body>
+    <section>
+
+       
+        <div id="chat-container">
+            <div id="user-list">
+                <!-- Profil Pengguna -->
+                <div>
+                    <img src="../img/foto1.png" alt="User Avatar">
+                    <span class="sender-name">Arif</span>
+                </div>
+                <div>
+                    <img src="../img/foto2.png" alt="User Avatar">
+                    <span class="sender-name">Dipta</span>
+                </div>
+                <div>
+                    <img src="../img/foto3.png" alt="User Avatar">
+                    <span class="sender-name">Bowo</span>
+                </div>
+                <div>
+                    <img src="../img/foto4.png" alt="User Avatar">
+                    <span class="sender-name">Dimas</span>
+                </div>
+                <div>
+                    <img src="../img/foto5.png" alt="User Avatar">
+                    <span class="sender-name">Naela</span>
+                </div>
+            </div>
+            <div id="chat-section">
+                <div id="chat-messages"></div>
+                <div id="message-input">
+                    <input type="text" id="message" placeholder="Ketik Pesan Anda...">
+                    <button id="send-button" onclick="sendMessage()">Kirim</button>
+                </div>
+            </div>
+            <div id="home-button">
+                <button onclick="goToHome()">Kembali</button>
+            </div>
+        </div>
+    </section>
+    <script src="../js/chat.js"></script>
+</body>
+</html>
